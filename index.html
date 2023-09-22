@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flower</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            position: relative; /* Agregamos posición relativa al body */
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            position: absolute; /* Posición absoluta para el título */
+            top: 10px; /* Ajusta la posición vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 2; /* Coloca el título sobre las flores */
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #666;
+            position: absolute; /* Posición absoluta para el subtítulo */
+            top: 60px; /* Ajusta la posición vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Centra horizontalmente */
+            z-index: 2; /* Coloca el subtítulo sobre las flores */
+        }
+
+        .flower {
+            position: relative; /* Añadimos posición relativa al contenedor de las flores */
+            z-index: 1; /* Enviamos las flores hacia atrás */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Esto es muy gei, jajaja pero hoy no te veo y aja... sabes que te quiero, ya me chivie bai</h2>
+    
+    <div class="flower">
+        <div class="f-wrapper">
+            <div class="flower__line"></div>
+            <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div class="flower__leaf flower__leaf--8 flower__fall-down--yellow"></div>
+            </div>
+        </div>
+        <div class="flower__glass"></div>
+
+    </div>
+
+    
+</body>
+</html>
